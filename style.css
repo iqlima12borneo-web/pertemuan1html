@@ -1,65 +1,58 @@
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
 body {
-    margin: 0;
-    padding: 30px;
-    font-family: Arial, sans-serif;
-    background-color: #eeeeee;
-    color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: blueviolet;
+    background-color: rgb(98, 52, 52);
 }
 
-.cv {
-    max-width: 850px;
-    margin: auto;
-    background-color: white;
-    padding: 45px;
-    box-shadow: 0 0 15px #bbbbbb;
+/* LAYOUT CONTAINER */
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 15px;
 }
-
-.header {
+/* 4. HEADER DAN NAVIGASI */
+header {
+    background-color: blue;
+    color: black;
+    padding: 25px 0;
     text-align: center;
-    border-bottom: 3px solid #222;
-    padding-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(red, green, blue, alpha);
 }
 
-.header h1 {
-    margin: 0;
-    font-size: 32px;
-}
-
-.header h3 {
-    margin: 8px 0;
-    font-weight: normal;
-}
-
-.header p {
-    font-size: 14px;
-}
-
-section {
-    margin-top: 28px;
-}
-
-h2 {
-    font-size: 19px;
-    border-bottom: 2px solid #333;
-    padding-bottom: 7px;
-}
-
-h3 {
+header h1 {
+    font-size: 2rem;
     margin-bottom: 5px;
 }
 
-p, li {
-    line-height: 1.6;
+header p {
+    font-size: 0.95rem;
+    opacity: 0.9;
+    margin-bottom: 15px;
 }
 
-ul {
-    padding-left: 20px;
+nav a {
+    margin-top: 10px;
+    font-size: 0.95rem;
 }
 
-.item {
-    margin-bottom: 18px;
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 6px 14px;
+    margin: 0 2px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+nav a:hover, nav a.active {
+    background-color: rgba(red, green, blue, alpha);
+    font-weight: bold;
 }
